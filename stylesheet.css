@@ -1,0 +1,292 @@
+* { 
+margin: 0; 
+padding: 0; 
+-moz-box-sizing: border-box; 
+box-sizing: border-box; 
+}
+
+body { 
+font-family: Arial, sans-serif; 
+}
+
+h1,h2,h3,h4,h5,h6,a{
+  margin:0;
+}
+
+a {
+color: inherit;
+font-size: 30px
+}
+
+#wrapper {
+    margin: 0 auto;
+    
+}
+
+
+/* when little and PORTRAIT */
+@media (max-width: 850px) and (orientation: portrait) {
+    #helmed {
+        clear: right;
+    }
+    
+    .splash-top {
+        height: 275px;
+    }
+    
+    #credits-label {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    .credits {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    html {
+    font-size: calc(1rem + ((1vw - 7.68px) * 1.0417));
+    }
+}
+
+/* when little and LANDSCAPE */
+@media (max-width: 850px) and (orientation: landscape) {
+    #helmed {
+        clear: right;
+    }
+    
+    .splash-top {
+        height: 200px;
+    }
+    
+    #credits-label {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    .credits {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    html {
+    font-size: calc(1rem + ((1vw - 7.68px) * 1.0417));
+    }
+}
+
+/* when big */
+@media (min-width: 851px) {
+    #photo-of-me {
+        padding-bottom: 10vh;
+    }
+    
+    .splash-top {
+        height: 425px;
+    }
+    
+    li {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    html {
+    font-size: calc(0.65rem + ((1vw - 7.68px) * 1.0417));
+    }
+    
+}
+
+/* SPLASH PAGE */
+
+.splash-top {
+    background-color: orange;
+    border-style: none;
+    border-bottom: 1px solid;
+    border-bottom-color: white;
+    /* height controlled via @media */
+    
+    
+}
+
+#phaselock-logo {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 15vh;
+    
+    
+    
+}
+
+.splash-bottom {
+    background-color: orange;
+    
+}
+
+#phaselock-logo {
+    float: left;
+    
+    
+}
+
+
+
+
+/* console image */
+#console-photo {
+    clear: left;
+    width: 100%;
+    
+}
+
+/* ABOUT PAGE */
+
+#about {
+    background-color: white;
+}
+
+#photo-of-me {
+    float: right;
+    height: 40%;
+    width: 40%;
+    transform: scale(1.2);
+    border-radius: 50%;
+    margin-right: 100px;
+    margin-left: 50px;
+    
+    
+}
+
+#helmed {
+    
+    max-width: 700px;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10vh;
+    
+    
+    
+}
+
+#credits-label {
+    background-color: orange;
+    clear: both;
+}
+
+header {
+    padding-left: 2%;
+    padding-bottom: 1rem;
+    
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.credits {
+    background-color: orange;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+
+
+li {
+    list-style: none;
+    line-height: 140%;
+    
+    font-weight: bold;
+}
+
+.left-column {
+    
+    flex: 0 0 33%;
+}
+
+.center-column {
+    
+    flex: 1 1 auto;
+}
+
+.right-column {
+    
+    flex: 0 0 33%;
+}
+
+/* CONTACT */
+
+.contact-form {
+    background-color: orange;
+    max-width: 900px;
+    margin: 4em auto;
+    border: 2px solid;
+    padding: 2em;
+    
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+    padding: .5em;  
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: .5em;
+    
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    resize: none;
+    
+}
+
+button {
+    border: 1px solid;
+    background-color: orange;
+    padding: 3px;
+    margin: 1em 0;
+    width: auto;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    border-width: 2px;
+    border-radius: 5px;
+    transition: .2s ease;
+    
+}
+
+#submitButton:hover {
+    background-color: papayawhip;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    background-color: papayawhip;
+    cursor: pointer;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
